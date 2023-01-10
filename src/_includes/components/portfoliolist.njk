@@ -1,0 +1,11 @@
+<ul class="list-none">
+    {% for item in portfoliolist %}
+        <li class="pt-6">
+            <a class="block hover:underline" href="{{ item.url | url }}">
+                <p class="font-bold mb-1">{{ item.data.title }}</p>
+                <p>{{ item.data.synopsis }}</p>
+                <p class="mt-1 text-sm underline">Read more &rarr;</p>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
